@@ -462,7 +462,7 @@ header {
   header ul {
     display: inline-flex;
     align-self: center;
-    height: 100%;
+    height: 47px;
     margin: 0;
     padding: 0;
     border-radius: 5px;
