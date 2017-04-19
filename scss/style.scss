@@ -16,147 +16,163 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Layout
    ========================================================================== */
 
+// Header
 header {
   display: flex;
   justify-content: space-around;
-
-  padding: 2em 0 2em;
+  position: relative;
+  padding: 3em 0 2em;
   background-color: #47bdd5;
-
-  .card-btn {
+  .header-btn {
     padding: 12px 24px;
-    border-radius: 5px; 
+    border-radius: 5px;
     background: linear-gradient(#4f524b, #3e3f37);
-    color: white;
+    color: #fff;
     margin-right: 10px;
     font-size: 14px;
-  }
-
-  ul {
-  display: inline-flex;
-  align-self: center;
-
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border-radius: 5px;
-  background-color: #d0eef5;
-  color: #020;
-  list-style: none;
-
-  li {
-    padding: 0 16px;
-    border-right: 1px solid #bad5da;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &:last-of-type {
-      border: 0;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(lighten(#4f524b, 10%), lighten(#3e3f37, 10%))
     }
   }
-
-  a {
-    font-size: 14px;
-    color: #000;
+  .header-login {
+    color: #fff;
     font-weight: 600;
     text-decoration: none;
-    line-height: 20px;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    &:hover {
+      top: 17px;
+    }
   }
-
-  input {
+  ul {
+    display: inline-flex;
+    align-self: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #d0eef5;
+    color: #020;
+    list-style: none;
+    li {
+      padding: 0 16px;
+      border-right: 1px solid #bad5da;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:last-of-type {
+        border: 0;
+        position: relative;
+        &:after {
+          content: " ";
+          background: url(../img/search.png) no-repeat;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 15px;
+          top: 18px;
+        }
+      }
+    }
+    a {
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      line-height: 20px;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 3px solid transparent;
+      }
+    }
+    input {
       border-radius: 5px;
       height: 24px;
       border: 1px solid #bad5da;
-
-      &:before {
-        content: "Log in";
-        display: block;
-        width: 100px;
-        height: 100px;
-      }
+      position: relative;
+    }
   }
 }
-}
 
-
-
-button {
-  display: inline-block;
-}
-
+// Cover
 .cover {
-    background-color: #47bdd5;
-
-    h1 {
-      color: #fff;
-      font-size: 5rem;
-      margin: 0 0 10px;
-      font-weight: 900;
+  background-color: #47bdd5;
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+  }
+  h1 {
+    color: #fff;
+    font-size: 5rem;
+    margin: 0 0 10px;
+    font-weight: 900;
+  }
+  p {
+    color: #026478;
+    margin: 0 0 30px;
+  }
+  img {
+    margin-right: 4em;
+  }
+  .cover-btn {
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    background: linear-gradient(#e96c54, #e75c42);
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(lighten(#e96c54, 10%), lighten(#e75c42, 10%))
     }
-    
-    p {
-      color: #026478;
-      margin: 0 0 30px;
-    }
-
-    img {
-      margin-right: 4em;
-    }
-
-    a {
-      padding: .75em 1.5em;
-      border-radius: 5px; 
-      background: linear-gradient(#e96c54, #e75c42);
-      color: white;
-      cursor: pointer;
-    }
+  }
 }
 
-.wrapper {
-  display: flex;
-  margin: 0 auto;
-  width: 80%;
+// Main
+.main-section {
+  background-color: #cbd1d0;
+  h2 {
+    margin-top: 0;
+  }
 }
-
 
 // Footer
-
 footer {
   background-color: #000;
-
-  p {
+  .footer-text {
     color: #6b6b68;
     text-align: center;
     padding: 100px 0 300px;
   }
-  
   .wrapper {
     display: flex;
     justify-content: space-between;
-
     padding-top: 20px;
-    
+  }
+  .footer-list {
+    margin: 0;
     h3 {
       color: #fff;
       font-size: 16px;
       margin: 0 0 10px;
     }
-
-
-    ul {
-      margin: 0;
-
-      a {
-        color: #6b6b68;
-        text-decoration: none;
-      }
+    a {
+      color: #6b6b68;
+      text-decoration: none;
     }
-
   }
 }
+
+// button {
+//   display: inline-block;
+// }
