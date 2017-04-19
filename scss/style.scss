@@ -83,8 +83,10 @@ header {
     position: absolute;
     right: 100px;
     top: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
     &:hover {
-      top: 17px;
+      font-weight: 600;
     }
   }
   ul {
@@ -123,8 +125,10 @@ header {
       text-decoration: none;
       line-height: 20px;
       cursor: pointer;
+      transition: all .2s ease-in-out;
       &:hover {
         // border-bottom: 3px solid transparent;
+        font-weight: 600;
       }
     }
     input {
@@ -139,6 +143,7 @@ header {
 // Cover
 .cover {
   background-color: #47bdd5;
+  // padding-bottom: 4em;
   .wrapper {
     display: flex;
     margin: 0 auto;
@@ -171,50 +176,51 @@ header {
 // Main
 .main-section {
   background-color: #cbd1d0;
-  .container {
-    background-color: #eff0f1;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  height: 600px;
+}
+
+.cards {
+  height: 700px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: #eff0f1;
+  position: relative;
+  top: -60px;
+  border-top: 2px solid transparent;
+  border-radius: 10px;
   h2 {
     margin: 0 1em;
     padding: 1em 0;
     color: #404139;
     font-size: 2rem;
+    width: 100%;
   }
 }
 
-.cards {
-  height: 100%;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  background-color: #eff0f1;
-}
 .card {
-  margin: 0 2em 4em;
+  padding: 0 2em 4em;
   width: 25%;
-
   img {
     height: 210px;
     width: 210px;
   }
-
   .card-title {
     color: #404139;
   }
   .card-subtitle {
     color: #404139;
     font-weight: 600;
-    margin:1em 0 .5em;
+    margin: 1em 0 .5em;
   }
   .card-description {
     color: #7e807e;
     height: 100px;
   }
-    .card-btn {
+  .card-btn {
     padding: 6px 12px;
     width: 100%;
     border-radius: 5px;
@@ -225,13 +231,17 @@ header {
     cursor: pointer;
     position: relative;
     text-align: left;
+    transition: all .6s ease-in-out;
     &:hover {
       background: linear-gradient(lighten(#4f524b, 10%), lighten(#3e3f37, 10%))
+    }
+    &:hover i {
+      right: 12px;
     }
     i {
       position: absolute;
       right: 6px;
-      top: 6px;
+      top: 8px;
     }
   }
 }
@@ -244,6 +254,7 @@ footer {
     color: #6b6b68;
     text-align: center;
     padding: 100px 0 300px;
+    margin: 0;
   }
   .wrapper {
     display: flex;
