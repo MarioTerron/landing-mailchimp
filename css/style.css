@@ -554,8 +554,9 @@ header {
     color: #404139;
     font-weight: 600;
     margin: 1em 0 .5em; }
-  .card p {
-    color: #7e807e; }
+  .card .card-description {
+    color: #7e807e;
+    height: 100px; }
   .card .card-btn {
     padding: 6px 12px;
     width: 100%;
