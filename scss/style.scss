@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'icons';
 
 /* Structure
    ========================================================================== */
@@ -19,6 +20,38 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 0 0 1.5em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.header-btn,
+.cover-btn,
+header a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
 }
 
 
@@ -46,7 +79,6 @@ header {
   }
   .header-login {
     color: #fff;
-    font-weight: 600;
     text-decoration: none;
     position: absolute;
     right: 100px;
@@ -88,12 +120,11 @@ header {
     a {
       font-size: 14px;
       color: #000;
-      font-weight: 600;
       text-decoration: none;
       line-height: 20px;
       cursor: pointer;
       &:hover {
-        border-bottom: 3px solid transparent;
+        // border-bottom: 3px solid transparent;
       }
     }
     input {
@@ -117,7 +148,6 @@ header {
     color: #fff;
     font-size: 5rem;
     margin: 0 0 10px;
-    font-weight: 900;
   }
   p {
     color: #026478;
@@ -141,13 +171,73 @@ header {
 // Main
 .main-section {
   background-color: #cbd1d0;
+  .container {
+    background-color: #eff0f1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   h2 {
-    margin-top: 0;
+    margin: 0 1em;
+    padding: 1em 0;
+    color: #404139;
+    font-size: 2rem;
+  }
+}
+
+.cards {
+  height: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-color: #eff0f1;
+}
+.card {
+  margin: 0 2em 4em;
+  width: 25%;
+
+  img {
+    height: 210px;
+    width: 210px;
+  }
+
+  .card-title {
+    color: #404139;
+  }
+  .card-subtitle {
+    color: #404139;
+    font-weight: 600;
+    margin:1em 0 .5em;
+  }
+  p {
+    color: #7e807e;
+  }
+    .card-btn {
+    padding: 6px 12px;
+    width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(#4f524b, #3e3f37);
+    color: #fff;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    &:hover {
+      background: linear-gradient(lighten(#4f524b, 10%), lighten(#3e3f37, 10%))
+    }
+    i {
+      position: absolute;
+      right: 6px;
+      top: 6px;
+    }
   }
 }
 
 // Footer
 footer {
+  position: relative;
   background-color: #000;
   .footer-text {
     color: #6b6b68;
@@ -156,7 +246,7 @@ footer {
   }
   .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 20px;
   }
   .footer-list {
@@ -169,10 +259,9 @@ footer {
     a {
       color: #6b6b68;
       text-decoration: none;
+      &:hover {
+        color: #FFF;
+      }
     }
   }
 }
-
-// button {
-//   display: inline-block;
-// }
