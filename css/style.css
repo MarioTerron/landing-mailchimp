@@ -452,7 +452,7 @@ header {
     position: absolute;
     top: 20px;
     right: 100px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in;
     color: #fff;
     font-weight: 600;
     text-decoration: none;
@@ -487,7 +487,7 @@ header {
           background: url("../img/search.png") no-repeat;
           content: ''; }
     header ul a {
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in;
       color: #000;
       font-size: 14px;
       line-height: 20px;
@@ -518,7 +518,7 @@ header {
   .cover img {
     margin-right: 4em; }
   .cover .cover-btn {
-    padding: .75em 1.5em;
+    padding: 0.75em 1.5em;
     border-radius: 5px;
     background: linear-gradient(#e96c54, #e75c42);
     color: #fff;
@@ -559,7 +559,7 @@ header {
   .card .card-title {
     color: #404139; }
   .card .card-subtitle {
-    margin: 1em 0 .5em;
+    margin: 1em 0 0.5em;
     color: #404139;
     font-weight: 600; }
   .card .card-description {
@@ -570,21 +570,22 @@ header {
     width: 100%;
     margin-right: 10px;
     padding: 6px 12px;
-    transition: all .6s ease-in-out;
+    transition: all .3s ease-in;
     border-radius: 5px;
     background: linear-gradient(#4f524b, #3e3f37);
     color: #fff;
     font-size: 14px;
     text-align: left;
     cursor: pointer; }
+    .card .card-btn i {
+      position: absolute;
+      top: 8px;
+      right: 6px;
+      transition: all .3s ease-in; }
     .card .card-btn:hover {
       background: linear-gradient(#696d63, #595a4f); }
       .card .card-btn:hover i {
         right: 12px; }
-    .card .card-btn i {
-      position: absolute;
-      top: 8px;
-      right: 6px; }
 
 footer {
   position: relative;
@@ -606,7 +607,7 @@ footer {
       font-size: 16px; }
     footer .footer-list a {
       position: relative;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in;
       color: #6b6b68;
       text-decoration: none; }
       footer .footer-list a:hover {
