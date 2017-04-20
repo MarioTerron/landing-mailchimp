@@ -1,4 +1,4 @@
-## MailChimp Landing Page ##
+# MailChimp Landing Page #
 
 ## Description ##
 
