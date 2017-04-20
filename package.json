@@ -1,0 +1,27 @@
+{
+  "name": "landing-mailchimp",
+  "version": "1.0.0",
+  "description": "mailchimp landing page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioTerron/landing-mailchimp.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Mario Terron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarioTerron/landing-mailchimp/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
