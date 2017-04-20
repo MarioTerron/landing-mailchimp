@@ -1,4 +1,4 @@
-## SkylabCoders Academy - Full Stack Web Development Bootcamp ##
+## MailChimp Landing Page ##
 
 ## Description ##
 
